@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer/Footer"
 import Hero from "../Components/Hero/Hero"
 import NewCollections from "../Components/NewCollections/NewCollections"
 import NewsLetter from "../Components/NewsLetter/NewsLetter"
@@ -14,6 +15,7 @@ const Shop = () => {
         <Offers/>
         <NewCollections/>
         <NewsLetter/>
+        <Footer/>
     </div>
   )
 }

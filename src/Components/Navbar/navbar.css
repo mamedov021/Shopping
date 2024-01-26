@@ -40,6 +40,9 @@
     border-radius: 10px;
     background-color: #FF4141;
 }
+.nav-menu a {
+    text-decoration: none;
+}
 
 .login-card{
     display: flex;

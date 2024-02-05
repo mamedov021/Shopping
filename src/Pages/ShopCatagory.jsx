@@ -9,21 +9,22 @@ const ShoopCatagory = (props) => {
 
   return (
     <div className="shop_catagory">
-      <img src={props.banner} alt="" />
-      <div className="shopCatagory_indexSort">
+      <img className='shopcategory-banner' src={props.banner} alt="" />
+      <div className="shopcatagory-indexSort">
         <p>
           <span> Showing 1-12</span> out of 36 products
         </p>
-        <div className="shopCategory_sort">
+        <div className="shopcategory-sort">
           Sort by <img src={drop} alt="" />
         </div>
       </div>
-      <div className="products">
-        {all_product.map((item, i) => {
-          if (props.category === item.category) {
-            return <Item key={i} item={item} />;
+      <div className="shopcategory-products">
+        {all_product.map((item,i ) =>{
+          if(props.category===item.category){
+            return <Item key={i}  id={item.id} name ={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
           }
-          return null; // Add this line to handle the case where the category doesn't match
+          else
+          return null;
         })}
       </div>
     </div>
